@@ -10,10 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
-// Initialize OpenAI using the environment variable
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Initialize Database pool using environment variables
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
