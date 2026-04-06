@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment Variables
+.env
+.env.local
+
+# Vue/Vite Build Output
+dist/
+dist-ssr/
+
+# OS Files
+.DS_Store
+Thumbs.db
